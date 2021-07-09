@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Fuggles&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bad Script', cursive;
+    background-color: purple;
+    background-image: url("images/photo.jpg");
+    border-radius: 50px;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 1.8em;
+    color:#fff;
+    margin-bottom: 0px;
+}
+
+p{
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.container{
+    display:inherit;
+    width: 60vw;
+}
+
+.panel {
+    background-color: pink;
+    background-image: url("images/cardBack.jpeg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    height: 80vh;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.3;
+    margin: 5px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h2 {
+    font-size: 28px;
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+    margin:0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h2{ 
+    background-color: rgba(0,0,0, 0.7);
+    border-radius: 40px;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.7s ease-in 0.7s;
+}
+
+@media(max-width: 1000px){
+
+    .container{
+        width: 80vw;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .container{
+        width: 100vw;
+    }
+
+    .panel:last-of-type{
+        display: none;
+    }
+}
+
+
