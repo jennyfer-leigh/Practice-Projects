@@ -1,0 +1,41 @@
+:root{
+    --pink-background-colour: rgb(255,166,201);
+    --blue-background-colour: rgb(80, 169, 241);
+    --yellow-background-colour: palegoldenrod;
+    --purple-background-colour:violet;
+}
+
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--pink-background-colour);
+}
+
+
+
+.colour{
+    display:flex;
+
+}
+
+.colour > *{
+    height: 5vh;
+    width: 5vw;
+    margin: 1px;
+}
+
+#pink{
+    background-color: var(--pink-background-colour);
+}
+#blue{
+    background-color: var(--blue-background-colour);
+}
+#yellow{
+    background-color: var(--yellow-background-colour);
+}
+#purple{
+    background-color:var(--purple-background-colour) ;
+}
